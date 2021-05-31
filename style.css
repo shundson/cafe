@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lobster', cursive;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrapper{
+    width : 100%;
+    margin : 0 auto;
+    padding: 0 50px;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+h2{
+    font-size: 48px;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+h3{
+    font-size: 1.5rem;
+
+}
+a{
+    text-decoration: none;
+}
+
+a:link, 
+a:hover ,
+a:active,
+a:visited {
+    color: black;
+}
+/*header
+---------------------------------------------------*/
+.header img{
+    width : 50px;
+}
+.header p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 5px;
+    color : rgb(77, 77, 77);
+}
+
+.header{
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.gnav{
+   margin-top: 16px;
+   margin-right: 20px;
+
+}
+
+.gnav li{
+    margin-left: 56px;
+    font-size: 1.3rem;
+}
+
+/*mainvisu
+-----------------------------------*/
+.mainvis{
+    height : 100vh;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    height : 100%;
+    width : 100%;
+    background-image: url("/images/lemoncake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header, h1{
+    position: relative;
+    z-index: 2;
+}
+
+
+/*CONCEPT
+----------------------------------------*/
+
+.con img{
+    width: 100%;
+}
+
+.conceptbox{
+    margin-right : 8vw; 
+    width : 50vw;
+}
+.con{
+    align-items: center;
+}
+
+.concept p{
+    margin-top: 7px;
+}
+
+.concept h3{
+    font-size: 48px;
+    color : rgb(0, 166, 255);
+    margin-bottom: 20px;
+}
+
+.conceptbox2{
+    margin-left : 8vw; 
+    width : 50vw;
+}
+
+.conunder{
+    flex-direction:row-reverse ;
+}
+
+.conover{
+    margin-bottom: 48px;
+}
+
+.hidden{
+    opacity : 0;
+	visibility: hidden;/*アニメーション*/
+	transition: 1s;
+	transform: translateY(30px);
+}
+
+.fadein{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);/*アニメーション*/
+        transition: 1s;
+
+}
+
+/*menue
+--------------------------------------------*/
+#slide{
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width : 1000px;
+    margin : 0 auto;
+
+}
+
+#slide ul{
+    position: absolute;
+    width : 3000px;
+    
+}
+
+#slide li{
+    float : left;
+    width : 1000px;
+    list-style-type: none;
+}
+
+
+#prevBtn{
+    position: absolute;
+    top : 225px;
+    left :20px;
+}
+
+#nextBtn{
+    position: absolute;
+    top : 225px;
+    right :20px;
+}
+
+.allmenue{
+    display: inline-block;
+    padding : 20px 50px;
+
+}
+.menueBtn{
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+.menue{
+    text-align: center;
+}
